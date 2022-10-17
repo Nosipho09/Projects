@@ -40,6 +40,7 @@ export default class MoviesDAO {
         query = { rated: { $eq: filters['rated'] } }
       }
     }
+    
     let cursor
     try {
       cursor = await movies
